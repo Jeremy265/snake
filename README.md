@@ -1,4 +1,4 @@
-# Snake
+# Snake (2019)
 
 # FR
 Projet scolaire de deuxième année de DUT pour apprendre JavaScript. Nul besoin de décrire le jeu Snake.
