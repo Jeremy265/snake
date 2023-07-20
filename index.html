@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./assets/main.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="menu" class="mx-auto">
+	    <h1 class="display-1 mb-5">Snake</h1>
+			<div class="input-group mb-5">
+			  <div class="input-group-prepend">
+			    <label class="input-group-text" for="niveaux">Niveau</label>
+			  </div>
+			  <select class="custom-select" id="niveaux">
+			    <option value="facile" selected>Facile</option>
+			    <option value="moyen">Moyen</option>
+			    <option value="difficile">Difficile</option>
+			  </select>
+			</div>
+			<button id="btnJouer" type="submit" class="btn btn-success">Jouer</button>
+			<div class="card mt-5">
+			  <div class="card-header">
+			    Crédits
+			  </div>
+			  <div class="card-body">
+			    <blockquote class="blockquote mb-0">
+			      <p>TP de JavaScript : Snake</p>
+			      <footer class="blockquote-footer">Jérémy Thomas et Quentin Buttard (G1S4)</footer>
+			    </blockquote>
+			  </div>
+			</div>
+		</div>
+		<div id = "jeu" class="container" style="display: none;">
+			<div class="">
+				<h1 class="display-1" id ="titreNiveau"></h1>
+				<p id = "score">0</p>
+				<p id="consigne">Appuyez sur une flèche pour commencer</p>
+			</div>
+			<div class="">
+				<canvas id="mainCanvas" width="900" height = "400"></canvas>
+			</div>
+			<div class="">
+				<button id="btnRecommencer" class="btn btn-warning">Recommencer</button>
+				<button id="btnRetour" class="btn btn-primary">Retour au menu</button>
+			</div>
+		</div>
+		<img style="display:none" src="assets/images/pomme.png" alt="Pomme" id="pomme">
+		<script type="text/javascript" src="./assets/script.js"></script>
+	</body>
+</html>
